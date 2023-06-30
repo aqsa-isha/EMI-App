@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/principalAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Principal Amount"
+        android:inputType="numberDecimal"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/downPaymentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/principalAmountEditText"
+        android:hint="Down Payment"
+        android:inputType="numberDecimal"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/interestRateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/downPaymentEditText"
+        android:hint="Interest Rate"
+        android:inputType="numberDecimal"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/loanTermEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/interestRateEditText"
+        android:hint="Loan Term (in months)"
+        android:inputType="number"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loanTermEditText"
+        android:text="Calculate Monthly EMI"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculateButton"
+        android:layout_marginTop="24dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
